@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Information</title>
+
+    <style>
+        /* Add margin between buttons */
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px; /* Adjust the margin as needed */
+            margin-right: 100px;
+        }
+
+        /* Style the buttons */
+        .button-container button {
+            padding: 10px 10px;
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+<center>
+    <div>
+<body>
+    <h1>Product Information</h1>
+
+    <form>
+        <label for="companyName">Company Name:</label>
+        <input type="text" id="companyName" name="companyName" required><br><br>
+
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" name="productName" required><br><br>
+
+        <label for="productDescription">Product Description:</label><br>
+        <textarea id="productDescription" name="productDescription" rows="4" cols="50"></textarea><br><br>
+
+        <label for="productType">What is the reason behind using this App ?</label>
+        <br>
+        <br>
+    <div>
+        <button onclick="redirectToPage('Investor_mse.html')">Investor</button>
+        <button onclick="redirectToPage('raw_material.html')">Supplier</button>
+        <button onclick="redirectToPage('mse_market_access.html')">Market Access</button>
+    </div>
+    <script>
+        function redirectToPage(url) {
+            window.location.href = url;
+        }
+    </script>
+        <br>
+        <br>
+       <!-- <input type="submit" value="Submit"> --> 
+    </form>
+</body>
+</div>
+</center>
+</html>

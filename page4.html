@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplier Product Submission</title>
+<style>
+.button  {
+           	 background-color: #007bff;/* Button background color */
+            	color: pink; /* Button text color */
+            	border: none;
+            	padding: 10px 20px;
+            	margin: 0 10px;
+           	border-radius: 5px; /* Rounded corners for buttons */
+            	cursor: pointer;
+            	text-decoration: none;
+        	}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Supplier Product Submission</h1>
+    </header>
+
+    <section id="product-form">
+        <h2>Enter Product Details</h2>
+        <form action="process_submission.php" method="POST" enctype="multipart/form-data">
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" name="product-name" required><br><br>
+
+            <label for="product-description">Product Description:</label><br>
+            <textarea id="product-description" name="product-description" rows="4" required></textarea><br><br>
+
+            <label for="product-price">Price ($):</label>
+            <input type="number" id="product-price" name="product-price" step="0.01" required><br><br>
+
+            <label for="product-image">Product Image:</label>
+            <input type="file" id="product-image" name="product-image" accept="image/*" required><br><br>
+
+           <a href="page8.html" class="button">Submit</a>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Supplier Website</p>
+    </footer>
+</body>
+</html>

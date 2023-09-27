@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MSE Registration Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        .container h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .input-group input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .input-group input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .input-group a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .input-group a:hover {
+            text-decoration: none;
+
+        }
+.button  {
+           	 background-color: #007bff;/* Button background color */
+            	color: pink; /* Button text color */
+            	border: none;
+            	padding: 10px 20px;
+            	margin: 0 10px;
+           	border-radius: 5px; /* Rounded corners for buttons */
+            	cursor: pointer;
+            	text-decoration: none;
+        	}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign-Up for MSEs</h1>
+        <form action="your_server_script.php" method="POST">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="example_name" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="strong@pwd#123" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Confirm-password</label>
+                <input type="password" id="password" name="password" placeholder="strong@pwd#123" required>
+            </div>
+            <div class="input-group">
+                <a href="page6.html" class="button" color="white">Register</a>
+            </div>
+        </form>
+        <p>Already have an account? <a href="login1.html">Login</a></p>
+    </div>
+</body>
+</html>
